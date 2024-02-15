@@ -1,7 +1,7 @@
 FROM node:20
 WORKDIR /app
 COPY package.json ./
-RUN yarn install
+RUN npm install
 COPY . .
-EXPOSE 5000
-CMD ["yarn","run","start"]
+EXPOSE 3000
+CMD ["npm","run","start"]
